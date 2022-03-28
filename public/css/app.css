@@ -204,3 +204,118 @@ main .container .load-more:hover {
      object-fit: contain;
 }
 
+.footer-top {
+  width: 100%;
+  height: 300px;
+  min-height: 300px;
+  background-image: url("http://127.0.0.1:8000/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: contrast(0.8);
+}
+
+.footer-top .container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-top .container .ft-top-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-top .container .ft-top-right {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.footer-top .container .ft-top-right .footer-dc-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-top .container .ft-top-right .footer-dc-logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scaleY(1.1);
+}
+
+.footer-bottom {
+  background-color: #333333;
+  height: 80px;
+}
+
+.footer-bottom .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-bottom .ft-btn {
+  width: 50%;
+}
+
+.footer-bottom .ft-btn a {
+  display: inline-block;
+  border: 3px solid #0081f8;
+  padding: 13px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-bottom .ft-social {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-bottom .ft-social span {
+  text-transform: uppercase;
+  color: #0081f8;
+  font-weight: bold;
+  margin: 0px 30px;
+}
+
+.ft-list-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0px;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li a {
+  color: #9e9e9e;
+  text-decoration: none;
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+
+ul li a:hover {
+  color: #fff;
+}
+
+.social-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+

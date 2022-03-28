@@ -1,0 +1,98 @@
+@import "./_variables";
+    .footer-top{
+      width: 100%;
+      height: 300px;
+      min-height: 300px;
+      background-image: url("http://127.0.0.1:8000/images/footer-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: contrast(0.8);
+      
+      .container{
+        height: 100%;
+        @include my_flex_row;
+        .ft-top-left{
+          width: 50%;
+          height: 100%;
+          @include my_flex_col;
+          flex-wrap: wrap;
+        }
+        .ft-top-right{
+          width: 50%;
+          height: 100%;
+          overflow: hidden;
+          .footer-dc-logo{
+            width: 100%;
+            height: 100%;
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transform: scaleY(1.1);
+            }
+          }
+        }
+        
+      }
+      
+    }
+    .footer-bottom{
+      background-color: $colorDarkGrey;
+      height: 80px;
+      .container{
+        @include my_flex_row;
+        height: 100%;
+      }
+      .ft-btn{
+        width: 50%;
+        a{
+          display: inline-block;
+          border: 3px solid $colorBlue;
+          padding: 13px;
+          color: $colorWhite;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+      .ft-social{
+        width: 50%;
+        @include my_flex_row;
+        justify-content: flex-end;
+        span{
+          text-transform: uppercase;
+          color: $colorBlue;
+          font-weight: bold;
+          margin: 0px 30px;
+        }
+      }
+    }
+
+    .ft-list-title{
+        color: $colorWhite;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 10px 0px;
+        display: inline-block;
+    }
+    ul{
+        list-style-type: none;
+        li{
+            a{
+                color: $colorLightGrey;
+                text-decoration: none;
+                font-size: 0.8em;
+                text-transform: capitalize;
+                &:hover{
+                color: $colorWhite
+                }
+            }
+        }
+    }
+
+    .social-list{
+    
+        list-style-type: none;
+        @include my_flex_row;
+        gap: 20px;
+        
+    }

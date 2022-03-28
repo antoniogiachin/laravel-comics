@@ -13,5 +13,7 @@
     @yield('content')
 
     @include('partials.linkSection')
+
+    @include('partials.footer')
 </body>
 </html>

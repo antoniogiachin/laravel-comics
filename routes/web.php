@@ -17,6 +17,28 @@ Route::get('/', function () {
     $headerLinks = config('headerLinks');
     $comics = config('comics');
     $linkSection = config('linkSection');
-    $data= ['comics' => $comics, 'Headerlinks' => $headerLinks, 'linkSection' => $linkSection];
+
+    $footerLinks = config('footerLinks');
+    // divido link footer per tipologia
+    $comicsLink = [];
+    $shopLink = [];
+    $dcLink = [];
+    $siteLink = [];
+    $socialLink = [];
+    foreach ($footerLinks as $link){
+        if($link['type'] == 'comics'){
+            $comicsLink[]= $link;
+        } elseif ($link['type'] == 'shop'){
+            $shopLink[]= $link;
+        } elseif ($link['type'] == 'DC'){
+            $dcLink[]= $link;
+        } elseif ($link['type'] == 'site'){
+            $siteLink[]= $link;
+        } else {
+            $socialLink[] = $link;
+        }
+    }
+
+    $data= ['comics' => $comics, 'Headerlinks' => $headerLinks, 'linkSection' => $linkSection, 'comicsLink' => $comicsLink, 'shopLink' => $shopLink, 'dcLink' => $dcLink, 'siteLink' => $siteLink, 'socialLink' => $socialLink,];
     return view('home', $data);
 });
