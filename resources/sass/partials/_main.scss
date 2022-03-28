@@ -42,6 +42,14 @@ main{
             text-transform: uppercase;
             font-size: 0.7em;
             padding: 0px 2px;
+                
+                a{
+                    text-decoration: none;
+                    color: $colorWhite;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
             }
         }  
 

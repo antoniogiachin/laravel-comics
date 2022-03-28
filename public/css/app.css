@@ -151,6 +151,15 @@ main .container .main-card .card-text {
   padding: 0px 2px;
 }
 
+main .container .main-card .card-text a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main .container .main-card .card-text a:hover {
+  text-decoration: underline;
+}
+
 main .container .load-more {
   display: inline-block;
   background-color: #0081f8;
