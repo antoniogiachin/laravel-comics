@@ -1,0 +1,13 @@
+@import './variables';
+#comic-page{
+    background-color: white;
+    color:#222;
+    .container{
+        justify-content: start;
+    }
+    .divider{
+        height: 80px;
+        background-color: $colorBlue;
+    }
+
+}

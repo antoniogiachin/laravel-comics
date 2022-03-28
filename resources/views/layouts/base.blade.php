@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
-    {{-- avrà semprel o stesso header, link section e footer --}}
+    {{-- avrà sempre lo stesso header, link section e footer --}}
     @include('partials.header')
+
+    @include('partials.jumbotron')
 
     {{-- segnaposto per contenuto main da popolare dinamicamente --}}
     @yield('content')

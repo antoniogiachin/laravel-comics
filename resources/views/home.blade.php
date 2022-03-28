@@ -6,15 +6,13 @@
 @section('content')
     {{-- qui va main --}}
     <main>
-        <div id="jumbotron">
-
-        </div>
 
         <div class="container">
 
             <div class="current-series"><span>current series</span></div>
             {{-- ciclo array comics e stampo --}}
             @foreach ($comics as $comic)
+                
                 <div class="main-card" >
 
                     <div class="card-img">
@@ -22,10 +20,11 @@
                     </div>
             
                     <div class="card-text">
-                    <span>{{$comic['title']}}</span>
+                    <a href="/comic">{{$comic['title']}}</a>
                     </div>
             
                 </div>
+                
             @endforeach
             
             <button class="load-more">Load More</button>

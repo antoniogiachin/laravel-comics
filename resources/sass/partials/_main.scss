@@ -4,13 +4,6 @@ main{
     background-color: $colorDark;
     color : $colorWhite;
     
-    #jumbotron{
-        min-height: 450px;
-        width: 100%;
-        background-image: url("{{asset('public/images/jumbotron.jpg')}}");
-        background-position: top;
-
-    }
 
     .container{
         @include my_flex_row;

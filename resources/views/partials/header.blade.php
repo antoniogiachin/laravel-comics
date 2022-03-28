@@ -15,7 +15,7 @@
 
             <ul>
                 {{-- ciclo array link header e stampo --}}
-                @foreach ($Headerlinks as $link)
+                @foreach ($headerlinks as $link)
                     <li>
                         <a href="{{$link['url']}}">{{$link['text']}}</a>
                     </li>

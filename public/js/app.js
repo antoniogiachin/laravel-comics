@@ -19421,7 +19421,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/src/index.js):\nSyntaxError\n\n(10:8) Unclosed string\n\n \u001b[90m  8 | \u001b[39m        min-height\u001b[33m:\u001b[39m 450px\u001b[33m;\u001b[39m\n \u001b[90m  9 | \u001b[39m        width\u001b[33m:\u001b[39m 100%\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 | \u001b[39m        background-image\u001b[33m:\u001b[39m \u001b[36murl\u001b[39m\u001b[36m(\u001b[39m\u001b[32m\"{{asset('public/images/jumbotron.jpg')}}\"\u001b[39m\u001b[36m)\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    | \u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 | \u001b[39m        background-position\u001b[33m:\u001b[39m top\u001b[33m;\u001b[39m\n \u001b[90m 12 | \u001b[39m\n\n    at /Users/antoniogiachin/Desktop/Boolean/Marzo/28Mar/laravel-comics/node_modules/webpack/lib/NormalModule.js:316:20\n    at /Users/antoniogiachin/Desktop/Boolean/Marzo/28Mar/laravel-comics/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Users/antoniogiachin/Desktop/Boolean/Marzo/28Mar/laravel-comics/node_modules/loader-runner/lib/LoaderRunner.js:233:18\n    at context.callback (/Users/antoniogiachin/Desktop/Boolean/Marzo/28Mar/laravel-comics/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at /Users/antoniogiachin/Desktop/Boolean/Marzo/28Mar/laravel-comics/node_modules/postcss-loader/src/index.js:207:9");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

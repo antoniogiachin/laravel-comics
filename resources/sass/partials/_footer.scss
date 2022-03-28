@@ -3,7 +3,7 @@
       width: 100%;
       height: 300px;
       min-height: 300px;
-      background-image: url("{{asset('images/footer-bg.jpg')}}");
+      background-image: url("/images/footer-bg.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       filter: contrast(0.8);
