@@ -11,5 +11,7 @@
     @include('partials.header')
 
     @yield('content')
+
+    @include('partials.linkSection')
 </body>
 </html>

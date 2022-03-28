@@ -1,0 +1,71 @@
+@import "./_variables.scss";
+
+main{
+    background-color: $colorDark;
+    color : $colorWhite;
+    
+    #jumbotron{
+        min-height: 450px;
+        width: 100%;
+        background-image: url("http://127.0.0.1:8000/images/jumbotron.jpg");
+        background-position: top;
+
+    }
+
+    .container{
+        @include my_flex_row;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: center;
+        padding: 50px 0px;
+        .current-series{
+          display: inline-block;
+          position: absolute;
+          top: -20px;
+          left: 0;
+          background-color: $colorBlue;
+          text-transform: uppercase;
+          color:$colorWhite;
+          padding: 5px 20px;
+          font-size: 1.2em;
+          font-weight: bold;
+        }
+        .main-card{
+            width: calc(100% / 6 - 20px);
+            height: 250px;
+            margin:  10px;
+            .card-img{
+            width: 100%;
+            height: 70%;
+            margin-bottom: 10px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+            .card-text{
+            text-transform: uppercase;
+            font-size: 0.7em;
+            padding: 0px 2px;
+            }
+        }  
+
+        .load-more{
+            display: inline-block;
+            background-color: $colorBlue;
+            border: none;
+            color: $colorWhite;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 8px 60px;
+            margin-top: 30px;
+            cursor: pointer;
+            &:hover{
+              filter: saturate(2);
+              transform: scale(1.1);
+            }
+        }
+    }
+}
