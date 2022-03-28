@@ -1,0 +1,50 @@
+@import "./_variables.scss";
+    header{
+        .container{
+            @include my_flex_row;
+            justify-content: space-between;
+            gap: 10px;
+            .header-left{
+                height: 80px;
+                @include my_flex_row;
+                .logo{
+                    width: 60px;
+                    height: 60px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        
+                    }
+                }
+            }
+            .header-right{
+                text-transform: uppercase;
+                height: 80px;
+                ul{
+                    list-style-type: none;
+                    height: 100%;
+                    @include my_flex_row;
+                    justify-content: space-around;
+                    li{
+                        margin: 0px 2px;
+                        height: 100%;
+                        line-height: 80px;
+                        a{
+                            color: $colorDark;
+                            height: 100%;
+                            padding: 0px 8px;
+                            display: inline-block;
+                            text-decoration: none;
+                            font-size: 0.8em;
+                            border-bottom: 5px solid transparent;
+                            &.active, &:hover{
+                                border-bottom: 5px solid $colorBlue;
+                                color:$colorBlue
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
