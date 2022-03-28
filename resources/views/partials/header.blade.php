@@ -14,6 +14,7 @@
         <div class="header-right">
 
             <ul>
+                {{-- ciclo array link header e stampo --}}
                 @foreach ($Headerlinks as $link)
                     <li>
                         <a href="{{$link['url']}}">{{$link['text']}}</a>

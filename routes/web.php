@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+    // collego i vari config con gli array per popolare dinamicamente
     $headerLinks = config('headerLinks');
     $comics = config('comics');
     $linkSection = config('linkSection');
@@ -39,6 +41,8 @@ Route::get('/', function () {
         }
     }
 
+    // metto tutte le variabili con i config pdentro una variabile per rendere più pulito il codice
     $data= ['comics' => $comics, 'Headerlinks' => $headerLinks, 'linkSection' => $linkSection, 'comicsLink' => $comicsLink, 'shopLink' => $shopLink, 'dcLink' => $dcLink, 'siteLink' => $siteLink, 'socialLink' => $socialLink,];
+    // al collegamento / mostrami la view home a cui passi $data
     return view('home', $data);
 });

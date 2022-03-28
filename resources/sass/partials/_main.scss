@@ -7,7 +7,8 @@ main{
     #jumbotron{
         min-height: 450px;
         width: 100%;
-        background-image: url("http://127.0.0.1:8000/images/jumbotron.jpg");
+        // background-image: url("http://127.0.0.1:8000/images/jumbotron.jpg");
+        background-image: url("{{asset('public/images/jumbotron.jpg')}}");
         background-position: top;
 
     }

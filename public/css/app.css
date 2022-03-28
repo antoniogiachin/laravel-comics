@@ -97,7 +97,7 @@ main {
 main #jumbotron {
   min-height: 450px;
   width: 100%;
-  background-image: url("http://127.0.0.1:8000/images/jumbotron.jpg");
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
   background-position: top;
 }
 

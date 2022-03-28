@@ -3,10 +3,11 @@
     
         <div class="container">
   
-          <div class="ft-top-left">
-              
+            <div class="ft-top-left">
+                
                 <div class="col">
                     <span class="ft-list-title">DC Comics</span>
+                    {{-- stampo per tipologia i link ciclandoli --}}
                     @foreach ($comicsLink as $link) 
                     <ul>
                         <li><a href="{{$link['url']}}">{{$link['text']}}</a></li>
@@ -40,23 +41,15 @@
                     </ul>
                     @endforeach
                 </div>
-           
-            {{-- <menuFooter title="dc comics" :links="menuComics"/>
-  
-            <menuFooter title="shop" :items="menuShop"/>
-  
-            <menuFooter title="dc" :items="menuDC"/>
-  
-            <menuFooter title="sites" :items="menuSites"/> --}}
-  
-          </div>
-  
-          <div class="ft-top-right">
-            <div class="footer-dc-logo">
-              <img src="http://127.0.0.1:8000/images/dc-logo-bg.png" alt="footer-logo">
+                
             </div>
-          </div>
-  
+    
+            <div class="ft-top-right">
+                <div class="footer-dc-logo">
+                    <img src="{{asset('/images/dc-logo-bg.png')}}" alt="footer-logo">
+                </div>
+            </div> 
+    
         </div>
   
     </div>
@@ -82,9 +75,7 @@
                     </li>
                 @endforeach           
             </ul>
-            
-            {{-- <socialList :links="socialLinks"/> --}}
-  
+              
           </div>
   
   

@@ -13,6 +13,7 @@
         <div class="container">
 
             <div class="current-series"><span>current series</span></div>
+            {{-- ciclo array comics e stampo --}}
             @foreach ($comics as $comic)
                 <div class="main-card" >
 

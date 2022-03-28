@@ -1,5 +1,6 @@
 <div id="links-section">
     <div class="container">
+        {{-- ciclo link sezione link e stampo --}}
         @foreach ($linkSection as $link)
             <a href="{{$link['href']}}" class="link-card">
                 <div class="card-img">
