@@ -65,10 +65,34 @@
         }
 
     }
-    .divider{
-        width: 100%;
-        height: 80px;
-        background-color: $colorBlue;
+    .desc{
+
+        padding: 1rem 0rem 5rem 0rem;
+        background-color: lightcyan;
+
+
+        .container{
+            margin: 0 auto;
+            padding: 0;
+            align-items: flex-start;
+    
+            .desc-left, .desc-right{
+                width: 50%;
+                line-height: 50px;
+                padding: 0rem 0.5rem;
+    
+                .artist, .writers, .line{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0rem 0.5rem;
+                }
+            }
+        }
+        .divider{
+            width: 100%;
+            height: 80px;
+            background-color: $colorBlue;
+        }
     }
 
 }

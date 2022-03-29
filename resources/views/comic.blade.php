@@ -29,9 +29,54 @@
                     <img src="{{$selectedComic['thumb']}}" alt="{{$selectedComic['title']}}">
                 </div>
             </div>
-            <div class="desc">
+        </div>    
+        <div class="desc">
+            <div class="container">
+
+                <div class="desc-left">
+                    <h3>Talent</h3>
+                    <hr>
+                    <div class="artist">
+                        <span>Art by: </span>
+                        <div class="artist-link">
+                            @foreach ($selectedComic['artists'] as $artist)
+                            <a href="#">{{$artist}} ,</a>
+                            @endforeach
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="writers">
+                        <span>Written by: </span>
+                        <div class="writers-link">
+                            @foreach ($selectedComic['writers'] as $writer)
+                            <a href="#">{{$writer}} ,</a>
+                            @endforeach
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="desc-right">
+                    <h3>Specs</h3>
+                    <hr>
+                    <div class="line">
+                        <span>Series: </span>
+                        <a href="#">{{$selectedComic['series']}}</a>
+                    </div>
+                    <hr>
+                    <div class="line">
+                        <span>Price: </span>
+                        <a href="#">{{$selectedComic['price']}}</a>
+                    </div>
+                    <hr>
+                    <div class="line">
+                        <span>On Sale Date: </span>
+                        <a href="#">{{$selectedComic['sale_date']}}</a>
+                    </div>
+                    <hr>
+                </div>
                 
             </div>
+
         </div>
     </main>
 @endsection
