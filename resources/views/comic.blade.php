@@ -6,6 +6,11 @@
 @section('content')
     {{-- qui va main --}}
     <main id="comic-page">
+        <div class="img-float">
+            <img src="{{$selectedComic['thumb']}}" alt="{{$selectedComic['title']}}">
+            <div class="gallery"><span class="txt-uc">view gallery</span></div>
+            <div class="comic-book"><span class="txt-uc">Comic Book</span></div>
+        </div>
         <div class="divider"></div>
         <div class="container">
             <div class="overview">
@@ -74,7 +79,7 @@
                     </div>
                     <hr>
                 </div>
-                
+
             </div>
 
         </div>
