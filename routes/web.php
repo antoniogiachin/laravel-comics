@@ -45,7 +45,7 @@ Route::get('/', function () {
     $data= ['comics' => $comics, 'headerlinks' => $headerLinks, 'linkSection' => $linkSection, 'comicsLink' => $comicsLink, 'shopLink' => $shopLink, 'dcLink' => $dcLink, 'siteLink' => $siteLink, 'socialLink' => $socialLink,];
     // al collegamento / mostrami la view home a cui passi $data
     return view('home', $data);
-})->name('home');
+})->name('/');
 
 //route per comic\
 Route::get('/comic/{comic_id}', function($comic_id){

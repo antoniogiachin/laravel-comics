@@ -11,7 +11,7 @@
         [
             'text' => 'comics',
 
-            'url' => 'home',
+            'url' => '/',
         ],
 
         [

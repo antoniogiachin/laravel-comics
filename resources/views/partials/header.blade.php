@@ -17,7 +17,11 @@
                 {{-- ciclo array link header e stampo --}}
                 @foreach ($headerlinks as $link)
                     <li>
-                        <a class="{{Request::route()->getName() == $link['url'] ? 'active' : ''}}" href="{{$link['url']}}"> {{$link['text']}}</a>
+                        <a class="
+                            @if (Request::route()->getName() == $link['url'])
+                                active
+                            @endif
+                        " href="{{$link['url']}}"> {{$link['text']}}</a>
                     </li>
                 @endforeach
             </ul>
