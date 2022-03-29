@@ -441,6 +441,8 @@ ul li a:hover {
   border-left: 1px solid black;
   height: 100%;
   padding: 0px 8px;
+  justify-content: center;
+  width: 30%;
 }
 
 #comic-page .container .overview-left .price .price-right select {

@@ -5,55 +5,55 @@
         [
             'text' => 'characters',
 
-            'url' => '#',
+            'url' => "characters",
         ],
 
         [
             'text' => 'comics',
 
-            'url' => '#',
+            'url' => 'home',
         ],
 
         [
             'text' => 'movies',
 
-            'url' => '#',
+            'url' => 'movies',
         ],
 
         [
             'text' => 'tv',
 
-            'url' => '#',
+            'url' => 'tv',
         ],
 
         [
             'text' => 'collectibles',
 
-            'url' => '#',
+            'url' => 'collectibles',
         ],
 
         [
             'text' => 'videos',
 
-            'url' => '#',
+            'url' => 'videos',
         ],
 
         [
             'text' => 'fans',
 
-            'url' => '#',
+            'url' => 'fans',
         ],
 
         [
             'text' => 'news',
 
-            'url' => '#',
+            'url' => 'news',
         ],
 
         [
             'text' => 'shop',
 
-            'url' => '#',
+            'url' => 'shop',
         ],
 
     ]
