@@ -2,10 +2,71 @@
 #comic-page{
     background-color: white;
     color:#222;
+    font-size: 0.8em;
+
     .container{
         justify-content: start;
+
+        h1{
+            text-transform: uppercase;
+        }
+
+        .overview{
+            width: 100%;
+            @include  my_flex_row;
+            align-items: flex-start;
+
+            p{
+                padding: 0rem 0.2rem;
+            }
+        }
+
+        .overview-left{
+            width: 80%;
+            @include my_flex_col;
+
+            .price{
+                @include my_flex_row;
+                margin: 1rem 0rem;
+                height: 50px;
+                background-color: green;
+
+                .price-left{
+                    min-width: 70%;
+                    height: 100%;
+                    @include my_flex_row;
+                    justify-content: space-between;
+                    padding: 0px 8px;
+                }
+                .price-right{
+                    @include my_flex_row;
+                    border-left: 1px solid black;
+                    height: 100%;
+                    padding: 0px 8px;
+                }
+            }
+        }
+
+        .overview-right{
+            width: 20%;
+            padding: 1rem;
+            text-align: right;
+            img{
+                object-fit: cover;
+                object-position: top;
+                width: 100%;
+                height: 100%;
+            }
+
+            span{
+                margin-bottom: 2px;
+            }
+
+        }
+
     }
     .divider{
+        width: 100%;
         height: 80px;
         background-color: $colorBlue;
     }
