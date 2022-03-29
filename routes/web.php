@@ -48,7 +48,7 @@ Route::get('/', function () {
 });
 
 //route per comic\
-Route::get('/comic', function(){
+Route::get('/comic/{comic_id}', function($comic_id){
      // collego i vari config con gli array per popolare dinamicamente
      $headerLinks = config('headerLinks');
      $comics = config('comics');
@@ -74,8 +74,15 @@ Route::get('/comic', function(){
              $socialLink[] = $link;
          }
      }
- 
+     // verifico id
+     if(is_numeric($comic_id) && $comic_id >=0 && $comic_id < count($comics)){
+        // se incontra i requisiti salvo il corrispondente array in una variabile
+        $selectedComic = $comics[$comic_id];
+        $data= ['comics' => $comics, 'headerlinks' => $headerLinks, 'linkSection' => $linkSection, 'comicsLink' => $comicsLink, 'shopLink' => $shopLink, 'dcLink' => $dcLink, 'siteLink' => $siteLink, 'socialLink' => $socialLink, 'selectedComic' => $selectedComic];
+        return view ('comic', $data);
+     } else {
+         abort(404, 'Fumetto non presente!');
+     }   
     
-    $data= ['comics' => $comics, 'headerlinks' => $headerLinks, 'linkSection' => $linkSection, 'comicsLink' => $comicsLink, 'shopLink' => $shopLink, 'dcLink' => $dcLink, 'siteLink' => $siteLink, 'socialLink' => $socialLink,];
-    return view('comic', $data);
 });
+

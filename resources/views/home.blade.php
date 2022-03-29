@@ -11,7 +11,7 @@
 
             <div class="current-series"><span>current series</span></div>
             {{-- ciclo array comics e stampo --}}
-            @foreach ($comics as $comic)
+            @foreach ($comics as $key => $comic)
                 
                 <div class="main-card" >
 
@@ -20,7 +20,7 @@
                     </div>
             
                     <div class="card-text">
-                    <a href="/comic">{{$comic['title']}}</a>
+                    <a href="/comic/{{$key}}">{{$comic['title']}}</a>
                     </div>
             
                 </div>
