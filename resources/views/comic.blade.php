@@ -18,7 +18,7 @@
                    <h1>{{$selectedComic['title']}}</h1>
                    <div class="price">
                        <div class="price-left">
-                           <span>Us Price: {{$selectedComic['price']}}</span>
+                           <p> <span>Us Price:</span>  {{$selectedComic['price']}}</p>
                            <span class="txt-uc">Available</span>
                        </div>
                        <div class="price-right">
@@ -31,7 +31,7 @@
                 </div> 
                 <div class="overview-right">
                     <span class="txt-uc">Advertisement</span>
-                    <img src="{{$selectedComic['thumb']}}" alt="{{$selectedComic['title']}}">
+                    <img src="/images/pubblicita.jpg" alt="{{$selectedComic['title']}}">
                 </div>
             </div>
         </div>    
@@ -65,17 +65,17 @@
                     <hr>
                     <div class="line">
                         <span>Series: </span>
-                        <a href="#">{{$selectedComic['series']}}</a>
+                        <a href="#" class="txt-uc">{{$selectedComic['series']}}</a>
                     </div>
                     <hr>
                     <div class="line">
-                        <span>Price: </span>
-                        <a href="#">{{$selectedComic['price']}}</a>
+                        <span >Price: </span>
+                        <a href="#" class="cl-bk">{{$selectedComic['price']}}</a>
                     </div>
                     <hr>
                     <div class="line">
-                        <span>On Sale Date: </span>
-                        <a href="#">{{$selectedComic['sale_date']}}</a>
+                        <span >On Sale Date: </span>
+                        <a href="#" class="cl-bk" >{{$selectedComic['sale_date']}}</a>
                     </div>
                     <hr>
                 </div>
