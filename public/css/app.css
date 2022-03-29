@@ -153,19 +153,19 @@ main .container .main-card .card-img img {
      object-position: top;
 }
 
-main .container .main-card .card-text {
-  text-transform: uppercase;
-  font-size: 0.7em;
-  padding: 0px 2px;
-}
-
-main .container .main-card .card-text a {
+main .container .main-card a {
   text-decoration: none;
   color: #fff;
 }
 
-main .container .main-card .card-text a:hover {
+main .container .main-card a:hover {
   text-decoration: underline;
+}
+
+main .container .main-card .card-text {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  padding: 0px 2px;
 }
 
 main .container .load-more {

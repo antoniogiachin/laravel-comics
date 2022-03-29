@@ -14,14 +14,17 @@
             @foreach ($comics as $key => $comic)
                 
                 <div class="main-card" >
-
-                    <div class="card-img">
-                    <img src="{{$comic['thumb']}}">
-                    </div>
-            
-                    <div class="card-text">
-                    <a href="/comic/{{$key}}">{{$comic['title']}}</a>
-                    </div>
+                    <a href="/comic/{{$key}}">
+                    
+                        <div class="card-img">
+                        <img src="{{$comic['thumb']}}">
+                        </div>
+                
+                        <div class="card-text">
+                        <span>{{$comic['title']}}</span>
+                        </div>
+                    
+                    </a>
             
                 </div>
                 
